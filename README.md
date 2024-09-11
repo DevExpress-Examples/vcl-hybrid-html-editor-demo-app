@@ -7,6 +7,8 @@
 # A Proof-of-Concept for Hybrid VCL Components (Powered by JS/DevExtreme Wrappers for Delphi)
 The demo application in this repository illustrates the idea of hybrid VCL applications that rely on a [WebView component](https://docwiki.embarcadero.com/Libraries/Athens/en/Vcl.Edge.TEdgeBrowser) (an embedded web browser) in a native container app for Microsoft Windows.
 
+![DevExpress VCL Hybrid HTML Editor Demo](./Images/vcl-hybrid-html-editor-demo.gif)
+
 The **HTML Editor** demo project relies on the [TEdgeBrowser](https://docwiki.embarcadero.com/Libraries/Athens/en/Vcl.Edge.TEdgeBrowser) component from the standard VCL library to display the [JavaScript DevExtreme HTML Editor](https://js.devexpress.com/React/Documentation/18_2/ApiReference/UI_Widgets/dxHtmlEditor/) wrapped into [WebPack](https://webpack.js.org/) to eschew the internet connection requirement.
 
 The editor switches between light and dark [CSS DevExtreme themes](https://js.devexpress.com/jQuery/Documentation/Guide/Themes_and_Styles/Predefined_Themes/) in response to switching between corresponding [DevExpress VCL skins and palettes](https://docs.devexpress.com/VCL/150003/ExpressSkinsLibrary/vcl-skin-library).
