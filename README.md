@@ -54,6 +54,8 @@ end;
 
 The RAD Studio IDE displays the following dialog when you build the demo project:
 
+![The Hybrid HTML Editor Demo Build Confirmation Dialog](./Images/vcl-hybrid-html-demo-build-confirmation.png)
+
 Click **Yes** to build and run the demo. The demo does not require internet connection.
 
 > This example is a proof of concept and is not supposed to be used in production. Production use also requires a license for [DevExpress JavaScript products](https://www.devexpress.com/buy/js/) (not covered by VCL subscriptions). For more information, refer to [Hybrid VCL Components (aka JS/DevExtreme Wrappers)](https://community.devexpress.com/blogs/vcl/archive/2024/07/24/vcl-year-end-roadmap-v24-2.aspx) and [Additional Thoughts on Hybrid VCL Apps with DevExpress (Reporting, Dashboards, etc.)](https://community.devexpress.com/blogs/vcl/archive/2024/07/24/vcl-year-end-roadmap-v24-2.aspx)
