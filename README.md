@@ -5,7 +5,6 @@
 <!-- default badges end -->
 
 # A Proof-of-Concept for Hybrid VCL Components (Powered by JS/DevExtreme Wrappers for Delphi)
-A proof-of-concept VCL Hybrid HTML Editor demo
 
 The demo application in this repository illustrates the idea of hybrid VCL applications that rely on a [WebView component](https://docwiki.embarcadero.com/Libraries/Athens/en/Vcl.Edge.TEdgeBrowser) (an embedded web browser) in a native container app for Microsoft Windows.
 
