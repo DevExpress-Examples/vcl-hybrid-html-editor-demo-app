@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 # vcl-hybrid-html-editor-demo-app
-A proof-of-concept VCL Hybrid HTML Editor demo
+A proof-of-concept VCL Hybrid HTML Editor demo!
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
