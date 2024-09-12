@@ -48,6 +48,7 @@ end;
 
 ## Prerequisites
 
+* Microsoft Windows 10 or newer
 * Embarcadero RAD Studio IDE 12.0 or newer (Community Edition is not supported)
 * The [EdgeView2 SDK](https://getitnow.embarcadero.com/edgeview2-sdk/) package installed from GetIt
 * DevExpress VCL Components v24.1.3 or newer
