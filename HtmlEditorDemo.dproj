@@ -82,7 +82,7 @@
         <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
         <AppDPIAwarenessMode>none</AppDPIAwarenessMode>
-        <PostBuildEvent><![CDATA[copy /Y "$(BDS)\Redist\win32\WebView2Loader.dll $(OUTPUT_DIR)
+        <PostBuildEvent><![CDATA[copy /Y "$(BDS)\Redist\win32\WebView2Loader.dll" $(OUTPUTDIR)
 $(PostBuildEvent)]]></PostBuildEvent>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
@@ -94,7 +94,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
-        <PostBuildEvent><![CDATA[copy /Y "$(BDS)\Redist\win64\WebView2Loader.dll
+        <PostBuildEvent><![CDATA[copy /Y "$(BDS)\Redist\win64\WebView2Loader.dll" $(OUTPUTDIR)
 $(PostBuildEvent)]]></PostBuildEvent>
         <AppDPIAwarenessMode>none</AppDPIAwarenessMode>
     </PropertyGroup>
@@ -183,7 +183,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
         <PreLinkEvent/>
         <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
-        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win32\WebView2Loader.dll $(OUTPUT_DIR)</PostBuildEvent>
+        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win32\WebView2Loader.dll&quot; $(OUTPUTDIR)</PostBuildEvent>
         <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Release' And '$(Platform)'=='Win64'">
@@ -191,7 +191,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
         <PreLinkEvent/>
         <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
-        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win64\WebView2Loader.dll</PostBuildEvent>
+        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win64\WebView2Loader.dll&quot; $(OUTPUTDIR)</PostBuildEvent>
         <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Debug' And '$(Platform)'=='Win32'">
@@ -199,7 +199,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
         <PreLinkEvent/>
         <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
-        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win32\WebView2Loader.dll $(OUTPUT_DIR)</PostBuildEvent>
+        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win32\WebView2Loader.dll&quot; $(OUTPUTDIR)</PostBuildEvent>
         <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Debug' And '$(Platform)'=='Win64'">
@@ -207,7 +207,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
         <PreLinkEvent/>
         <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
-        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win64\WebView2Loader.dll</PostBuildEvent>
+        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win64\WebView2Loader.dll&quot; $(OUTPUTDIR)</PostBuildEvent>
         <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
     </PropertyGroup>
 </Project>
