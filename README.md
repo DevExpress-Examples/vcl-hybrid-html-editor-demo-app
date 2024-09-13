@@ -5,13 +5,29 @@
 <!-- default badges end -->
 
 # A Proof-of-Concept for Hybrid VCL Components (Powered by JS/DevExtreme Wrappers for Delphi)
-The demo application in this repository illustrates the idea of hybrid VCL applications that rely on a [WebView component](https://docwiki.embarcadero.com/Libraries/Athens/en/Vcl.Edge.TEdgeBrowser) (an embedded web browser) in a native container app for Microsoft Windows.
+The demo application in this repository illustrates the idea of hybrid VCL applications that rely on a [WebView component](https://docwiki.embarcadero.com/Libraries/Athens/en/Vcl.Edge.TEdgeBrowser) (an embedded web browser) in a native container app for Microsoft Windows. VCL developers can configure this JS widget using Delphi code and integrate JS HTML Editor commands with our VCL Ribbon control.
+The editor can also switch between light and dark [CSS DevExtreme themes](https://js.devexpress.com/jQuery/Documentation/Guide/Themes_and_Styles/Predefined_Themes/) in response to switching between corresponding [DevExpress VCL skins and palettes](https://docs.devexpress.com/VCL/150003/ExpressSkinsLibrary/vcl-skin-library).
 
 ![DevExpress VCL Hybrid HTML Editor Demo](./Images/vcl-hybrid-html-editor-demo.gif)
 
+> **NOTE**: This example is a proof of concept and should not be used in production. Production use also requires a license for [DevExpress JavaScript products](https://www.devexpress.com/buy/js/) (not included in VCL subscriptions). For more information, refer to [Hybrid VCL Components (aka JS/DevExtreme Wrappers)](https://community.devexpress.com/blogs/vcl/archive/2024/07/24/vcl-year-end-roadmap-v24-2.aspx) and [Additional Thoughts on Hybrid VCL Apps with DevExpress (Reporting, Dashboards, etc.)](https://community.devexpress.com/blogs/vcl/archive/2024/07/24/vcl-year-end-roadmap-v24-2.aspx).
+
+## Prerequisites
+
+* Microsoft Windows 10 or newer
+* Embarcadero RAD Studio IDE 12.0 or newer (Community Edition is not supported)
+* The [EdgeView2 SDK](https://getitnow.embarcadero.com/edgeview2-sdk/) package installed from GetIt
+* DevExpress VCL Components v24.1.3 or newer
+
+## Implementation Details
+
 The **HTML Editor** demo project relies on the [TEdgeBrowser](https://docwiki.embarcadero.com/Libraries/Athens/en/Vcl.Edge.TEdgeBrowser) component from the standard VCL library to display the [JavaScript DevExtreme HTML Editor](https://js.devexpress.com/React/Documentation/18_2/ApiReference/UI_Widgets/dxHtmlEditor/) wrapped into [WebPack](https://webpack.js.org/) to eliminate the need for an internet connection.
 
-The editor switches between light and dark [CSS DevExtreme themes](https://js.devexpress.com/jQuery/Documentation/Guide/Themes_and_Styles/Predefined_Themes/) in response to switching between corresponding [DevExpress VCL skins and palettes](https://docs.devexpress.com/VCL/150003/ExpressSkinsLibrary/vcl-skin-library).
+The RAD Studio IDE displays the following dialog when you build the demo project:
+
+![The Hybrid HTML Editor Demo Build Confirmation Dialog](./Images/vcl-hybrid-html-demo-build-confirmation.png)
+
+Click **Yes** to build and run the demo. The demo does not require an internet connection.
 
 ## How to Configure JS Widgets in Delphi Code
 
@@ -45,21 +61,6 @@ begin
   end;
 end;
 ```
-
-## Prerequisites
-
-* Microsoft Windows 10 or newer
-* Embarcadero RAD Studio IDE 12.0 or newer (Community Edition is not supported)
-* The [EdgeView2 SDK](https://getitnow.embarcadero.com/edgeview2-sdk/) package installed from GetIt
-* DevExpress VCL Components v24.1.3 or newer
-
-The RAD Studio IDE displays the following dialog when you build the demo project:
-
-![The Hybrid HTML Editor Demo Build Confirmation Dialog](./Images/vcl-hybrid-html-demo-build-confirmation.png)
-
-Click **Yes** to build and run the demo. The demo does not require an internet connection.
-
-> This example is a proof of concept and should not be used in production. Production use also requires a license for [DevExpress JavaScript products](https://www.devexpress.com/buy/js/) (not included in VCL subscriptions). For more information, refer to [Hybrid VCL Components (aka JS/DevExtreme Wrappers)](https://community.devexpress.com/blogs/vcl/archive/2024/07/24/vcl-year-end-roadmap-v24-2.aspx) and [Additional Thoughts on Hybrid VCL Apps with DevExpress (Reporting, Dashboards, etc.)](https://community.devexpress.com/blogs/vcl/archive/2024/07/24/vcl-year-end-roadmap-v24-2.aspx).
 
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
